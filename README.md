@@ -11,7 +11,7 @@ This project builds a real-time dynamic pricing engine for urban parking lots. I
 
 ---
 
-##  Tech Stack
+## 🛠 Tech Stack
 
 * **Python** — Core logic & modeling
 * **Pandas** — Data processing
@@ -38,7 +38,7 @@ graph TD
 
 ---
 
-## Project Workflow
+##  Project Workflow
 
 1. **Upload CSV:** Upload and read the dataset from Google Colab using `files.upload()`.
 2. **Preprocessing:** Clean columns, map vehicle types to weights, and normalize relevant features.
@@ -73,8 +73,8 @@ graph TD
 * [x] Interactive line plot for each lot
 * [x] Colab-compatible setup
 
-
 ---
+
 
 ##  How to Run
 
@@ -85,7 +85,7 @@ graph TD
 
 ---
 
-##  Assumptions made
+##  Assumptions
 
 * Vehicle types are limited to \[car, bike, truck].
 * Occupancy and queue are positively correlated with price.
@@ -103,4 +103,6 @@ By blending domain intuition with data-driven modeling, this system achieves:
 * Visualization that justifies pricing decisions
 
 This project mimics a real-world smart parking backend that could be expanded to integrate with IoT devices or city infrastructure.
+
+
 
