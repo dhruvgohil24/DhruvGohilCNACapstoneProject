@@ -5,13 +5,13 @@
 
 ---
 
-##  Overview
+## Overview
 
 This project builds a real-time dynamic pricing engine for urban parking lots. It intelligently adjusts the parking price based on demand patterns, traffic congestion, special events, vehicle types, and competitive behavior. The system aims to make parking more efficient, reducing overcrowding and improving utilization.
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 * **Python** — Core logic & modeling
 * **Pandas** — Data processing
@@ -22,21 +22,25 @@ This project builds a real-time dynamic pricing engine for urban parking lots. I
 
 ---
 
-##  System Architecture
+## System Architecture
 
-```mermaid
-graph TD
-    A[Dataset Upload (CSV)] --> B[Preprocessing & Feature Engineering]
-    B --> C1[Model 1: Baseline Pricing]
-    B --> C2[Model 2: Demand-Based Pricing]
-    B --> C3[Model 3: Competitive Pricing]
-    C1 --> D[Price Output Table]
-    C2 --> D
-    C3 --> D
-    D --> E[Visualization: Bokeh Live Plot]
+**Visual Architecture Overview:**
+
+```
+[Dataset Upload (CSV)]
+        ↓
+[Preprocessing & Feature Engineering]
+        ↓
+ ┌────────────┬──────────────┬───────────────┐
+ ↓            ↓              ↓
+[Model 1]  [Model 2]     [Model 3]
+(Baseline) (Demand-Based) (Competitive)
+        ↓            ↓              ↓
+        └────→ [Pricing Output Table] ←────┘
+                        ↓
+              [Bokeh Visualization]
 ```
 
----
 
 ##  Project Workflow
 
@@ -65,7 +69,7 @@ graph TD
 
 ---
 
-##  Features Implemented
+## Features Implemented
 
 * [x] Real-time price simulation
 * [x] Three-stage pricing logic
@@ -74,7 +78,6 @@ graph TD
 * [x] Colab-compatible setup
 
 ---
-
 
 ##  How to Run
 
@@ -103,6 +106,8 @@ By blending domain intuition with data-driven modeling, this system achieves:
 * Visualization that justifies pricing decisions
 
 This project mimics a real-world smart parking backend that could be expanded to integrate with IoT devices or city infrastructure.
+
+
 
 
 
