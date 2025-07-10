@@ -1,7 +1,7 @@
 #  Dynamic Pricing for Urban Parking Lots
 
 **Summer Analytics 2025 | Consulting & Analytics Club × Pathway**
-*Author: Dhruv Gohil*
+*By: Dhruv Gohil*
 
 ---
 
